@@ -1,0 +1,66 @@
+<section class="auth-page">
+  <div class="auth-container">
+    <h2>Register</h2>
+
+    <form id="signup-form">
+      <div class="row">
+        <input
+          id="firstName-input"
+          name="firstName"
+          type="text"
+          placeholder="minimum 3 characters"
+        />
+        <label for="firstName-input">First Name</label>
+        <p class="firstName-alert form-alert"></p>
+      </div>
+
+      <div class="row">
+        <input
+          id="lastName-input"
+          name="lastName"
+          type="text"
+          placeholder="minimum 3 characters"
+        />
+        <label for="lastName-input">Last Name</label>
+        <p class="lastName-alert form-alert"></p>
+      </div>
+
+      <div class="row">
+        <input id="email-input" name="email" type="email" placeholder="email" />
+        <label for="email-input">Email</label>
+        <p class="email-alert form-alert"></p>
+      </div>
+
+      <div class="row">
+        <input
+          id="password-input"
+          name="password"
+          type="password"
+          placeholder="enter your password"
+        />
+        <label for="password-input">Password</label>
+        <p class="password-alert form-alert"></p>
+      </div>
+
+      <div class="row">
+        <input
+          id="phone-input"
+          name="phone"
+          type="text"
+          placeholder="enter your phone (optionl)"
+        />
+        <label for="phone-input">Phone</label>
+        <p class="phone-alert form-alert"></p>
+      </div>
+
+      <button class="submit-btn" disabled>
+        <span class="mini-loader"></span>Sign Up
+      </button>
+
+      <p>
+        Already have an account?
+        <a href="#login">Login</a>
+      </p>
+    </form>
+  </div>
+</section>

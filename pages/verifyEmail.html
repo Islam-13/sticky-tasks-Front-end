@@ -1,0 +1,27 @@
+<main class="auth-page">
+  <div class="auth-container">
+    <h2>Verification required</h2>
+
+    <p>Please check your email for a message with your code.</p>
+
+    <form id="verify-form">
+      <div class="row">
+        <input
+          id="code-input"
+          type="number"
+          name="otp"
+          placeholder="enter code"
+        />
+        <label for="code-input">Enter code</label>
+        <p class="code-alert form-alert"></p>
+      </div>
+
+      <div class="btn-group">
+        <a role="button" href="#login">Cancel</a>
+        <button class="submit-btn" disabled>
+          <span class="mini-loader"></span> Verify
+        </button>
+      </div>
+    </form>
+  </div>
+</main>

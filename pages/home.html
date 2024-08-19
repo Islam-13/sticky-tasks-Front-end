@@ -1,0 +1,119 @@
+<div class="app-page">
+  <header>
+    <div class="header-container">
+      <div class="logo"><a href="#">sticky tasks</a></div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="active">home</a>
+          </li>
+          <li>
+            <a href="#profile">profile</a>
+          </li>
+          <li>
+            <button class="logout-btn">logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <button class="open-form-btn">add new task</button>
+
+    <dialog>
+      <button class="close-btn"><i class="bi bi-x-circle"></i></button>
+
+      <form id="task-form">
+        <div class="form-row">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" />
+        </div>
+
+        <div class="form-control">
+          <div class="form-row">
+            <label for="priority">Priority</label>
+            <select id="priority" name="priority">
+              <option>high</option>
+              <option>medium</option>
+              <option>low</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="category">Category</label>
+            <select id="category" name="category">
+              <option>work</option>
+              <option>personal</option>
+              <option>occasions</option>
+              <option>others</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="reset" class="close-form-btn">Cancel</button>
+          <button type="submit" class="submit-btn">
+            <span class="mini-loader"></span> Add Task
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </section>
+
+  <main>
+    <div class="categories">
+      <button class="filter-btn active" data-category="all">all</button>
+      <button class="filter-btn" data-category="work">work</button>
+      <button class="filter-btn" data-category="personal">personal</button>
+      <button class="filter-btn" data-category="occasions">occasions</button>
+      <button class="filter-btn" data-category="others">others</button>
+    </div>
+
+    <div class="data-loader-container">
+      <div class="data-loader">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="search-query d-none">
+        <label for="search"
+          ><i class="bi bi-search"></i> <span>Type to search</span></label
+        >
+        <input
+          type="search"
+          name="searc"
+          id="search"
+          placeholder="Type to search"
+        />
+      </div>
+
+      <div class="todo-list"></div>
+
+      <button class="clear-btn d-none">
+        clear tasks <i class="bi bi-trash3"></i>
+      </button>
+    </div>
+  </main>
+
+  <dialog class="delete-alert">
+    <button class="close-btn">
+      <i class="bi bi-x-circle"></i>
+    </button>
+    <div class="delete-alert-box">
+      <h3>clear tasks</h3>
+      <p>
+        Are you sure you want to clear tasks permanently? This action cannot be
+        undone.
+      </p>
+      <div class="btn-group">
+        <button class="close-clear-dialog">Cancel</button>
+        <button class="final-delete">
+          <span class="mini-loader clear-loader"></span> delete
+        </button>
+      </div>
+    </div>
+  </dialog>
+</div>

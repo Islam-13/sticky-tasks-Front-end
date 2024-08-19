@@ -1,0 +1,35 @@
+<section class="auth-page">
+  <div class="auth-container">
+    <h2>Login</h2>
+
+    <form id="login-form">
+      <div class="row">
+        <input id="email-input" type="email" name="email" placeholder="email" />
+        <label for="email-input">Email</label>
+        <p class="email-alert form-alert"></p>
+      </div>
+
+      <div class="row">
+        <input
+          id="password-input"
+          type="password"
+          name="password"
+          placeholder="enter your password"
+        />
+        <label for="password-input">Password</label>
+        <p class="password-alert form-alert"></p>
+      </div>
+
+      <button class="submit-btn" disabled>
+        <span class="mini-loader"></span> Login
+      </button>
+
+      <a href="#forgetPassword">Forget Password?</a>
+
+      <p>
+        Don't have an account?
+        <a href="#signup">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</section>
